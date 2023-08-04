@@ -1,11 +1,323 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spotify Clone Playlist</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    
+    <div class="container-fluid" style="height: 100vh;">
+
+        <!-- sidebar -->
+        <div class="row h-100">
+            <!-- sidebar -->
+            <div class="col-3 bg-black ">
+                <div class="container" style="height: 90%;">
+                    <div class="my-4 ms-3">
+                        <img src="/assets/icons/Spotify logo.png" class="w-50" alt="">
+                    </div>
+
+                    <div class="d-flex w-100 flex-column h-50 ">
+                        <!-- sidebar navigation | Start -->
+                        <div class="">
+                            <div class="hover-sidebar py-2 px-3">
+                                <img src="./assets/icons/Home.png" style="height: 25px;" alt="Home">
+                                <span class="ms-3 text-white fw-semibold">Home</span>
+                            </div>
+                            <div class="hover-sidebar py-2 px-3">
+                                <img src="./assets/icons/Search.png" style="height: 25px;" alt="Home">
+                                <span class="ms-3 text-white fw-semibold">Search</span>
+                            </div>
+                            <div class="hover-sidebar py-2 px-3">
+                                <img src="./assets/icons/Your library.png" style="height: 25px;" alt="Home">
+                                <span class="ms-3 text-white fw-semibold">Your Library</span>
+                            </div>
+                        </div>
+
+                        <!-- sidebar playlist | Middle-->
+                        <div class="">
+                            <div class="text-white opacity-75 p-3">PLAYLISTS</div>
+                            <div class="hover-sidebar py-2 px-3">
+                                <img src="./assets/icons/plus.png" style="height: 25px;" alt="Home">
+                                <span class="ms-3 text-white fw-semibold">Create Playlist</span>
+                            </div>
+                            <div class="hover-sidebar py-2 px-3">
+                                <img src="./assets/icons/purpleheart.png" style="height: 25px;" alt="Home">
+                                <span class="ms-3 text-white fw-semibold">Liked Songs</span>
+                            </div>
+
+                        </div>
+                        <hr class="text-white ">
+
+                    </div>
+                    <div class="h-50">
+                        <img src="./assets/Raaz_2002_film.jpg" class=" h-50 w-100" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-9 g-0">
+                <!-- main upper section -->
+                <section class=" album-background" style="height: 30%;">
+                    <div class="d-flex container h-100 ">
+                        <div class="mt-auto m-4">
+                            <img src="./assets/90's.jpeg" style="height: 150px;" alt="">
+                        </div>
+                        <div class="mt-auto m-2 mb-4">
+                            <span class="table-text-2">PLAYLIST</span>
+                            <h1 class="ps-0 fs-1 text-white">Golden Era </h1>
+                            <div class="vstack para-text ">
+                                <p class="mb-1 opacity-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <div class="d-flex">
+                                    <span class="fw-semibold">Spotify</span>
+                                    <ul class="d-flex opacity-50">
+                                        <li class="mx-2">860,500 likes</li>
+                                        <li class="mx-2">100 songs, 5hr 5min</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- musicList -->
+                <div class="playlist-table" style="height: 70%;">
+                    <div class="container">
+                            <img src="./assets/icons/play.png" class="my-3 mx-2 " style="width: 30px; "  alt="">
+                            <img src="./assets/icons/heart.png" class="my-3 mx-2" style="width: 22px;" alt="">
+                            <img src="./assets/icons/three-dot.png" class="my-3 mx-2" style="width: 18px;" alt="">
+                    </div>
+                    <div class="container">
+                        <table class="table table-borderless table-hover bg-transparent">
+                            <thead class="text-white opacity-75">
+                                <tr class="table-text-2">
+                                    <td>#</td>
+                                    <td>TITLE</td>
+                                    <td>ALBUM</td>
+                                    <td>DATE ADDED</td>
+                                    <td></td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="">
+                                    <td class="table-text-2">1</td>
+                                    <td class="d-flex">
+                                        <div class="ms-2 w-auto">
+                                            <img src="./assets/kya hua tera wada.jpg" style="width: 45px;" alt="">
+                                        </div>
+                                        <div class="ms-2 my-auto vstack flex-wrap">
+                                            <span class=" m-0 table-text-2">Kya Hua Tera Wada</span>
+                                            <span class=" opacity-50 table-text">Mohammed Rafi</span>
+                                        </div>
+                                    </td>
+                                    <td class="table-text-2">
+                                        Hum Kisise Kum Naheen
+                                    </td>
+                                    <td class="table-text-2">
+                                        12/11/1989
+                                    </td>
+                                    <td>
+                                        <div class="">
+                                            <img src="./assets/icons/heart.png" alt="">
+                                            <span class="table-text-2 mx-2">2:45</span>
+                                            <img src="./assets/icons/three-dot.png" alt="">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="">
+                                    <td class="table-text-2">2</td>
+                                    <td class="d-flex">
+                                        <div class="ms-2 w-auto">
+                                            <img src="./assets/kya hua tera wada.jpg" style="width: 45px;" alt="">
+                                        </div>
+                                        <div class="ms-2 my-auto vstack flex-wrap">
+                                            <span class=" m-0 table-text-2">Kya Hua Tera Wada</span>
+                                            <span class=" opacity-50 table-text">Mohammed Rafi</span>
+                                        </div>
+                                    </td>
+                                    <td class="table-text-2">
+                                        Hum Kisise Kum Naheen
+                                    </td>
+                                    <td class="table-text-2">
+                                        12/11/1989
+                                    </td>
+                                    <td>
+                                        <div class="">
+                                            <img src="./assets/icons/heart.png" alt="">
+                                            <span class="table-text-2 mx-2">2:45</span>
+                                            <img src="./assets/icons/three-dot.png" alt="">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="">
+                                    <td class="table-text-2">3</td>
+                                    <td class="d-flex">
+                                        <div class="ms-2 w-auto">
+                                            <img src="./assets/kya hua tera wada.jpg" style="width: 45px;" alt="">
+                                        </div>
+                                        <div class="ms-2 my-auto vstack flex-wrap">
+                                            <span class=" m-0 table-text-2">Kya Hua Tera Wada</span>
+                                            <span class=" opacity-50 table-text">Mohammed Rafi</span>
+                                        </div>
+                                    </td>
+                                    <td class="table-text-2">
+                                        Hum Kisise Kum Naheen
+                                    </td>
+                                    <td class="table-text-2">
+                                        12/11/1989
+                                    </td>
+                                    <td>
+                                        <div class="">
+                                            <img src="./assets/icons/heart.png" alt="">
+                                            <span class="table-text-2 mx-2">2:45</span>
+                                            <img src="./assets/icons/three-dot.png" alt="">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="">
+                                    <td class="table-text-2">4</td>
+                                    <td class="d-flex">
+                                        <div class="ms-2 w-auto">
+                                            <img src="./assets/kya hua tera wada.jpg" style="width: 45px;" alt="">
+                                        </div>
+                                        <div class="ms-2 my-auto vstack flex-wrap">
+                                            <span class=" m-0 table-text-2">Kya Hua Tera Wada</span>
+                                            <span class=" opacity-50 table-text">Mohammed Rafi</span>
+                                        </div>
+                                    </td>
+                                    <td class="table-text-2">
+                                        Hum Kisise Kum Naheen
+                                    </td>
+                                    <td class="table-text-2">
+                                        12/11/1989
+                                    </td>
+                                    <td>
+                                        <div class="">
+                                            <img src="./assets/icons/heart.png" alt="">
+                                            <span class="table-text-2 mx-2">2:45</span>
+                                            <img src="./assets/icons/three-dot.png" alt="">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="">
+                                    <td class="table-text-2">5</td>
+                                    <td class="d-flex">
+                                        <div class="ms-2 w-auto">
+                                            <img src="./assets/kya hua tera wada.jpg" style="width: 45px;" alt="">
+                                        </div>
+                                        <div class="ms-2 my-auto vstack flex-wrap">
+                                            <span class=" m-0 table-text-2">Kya Hua Tera Wada</span>
+                                            <span class=" opacity-50 table-text">Mohammed Rafi</span>
+                                        </div>
+                                    </td>
+                                    <td class="table-text-2">
+                                        Hum Kisise Kum Naheen
+                                    </td>
+                                    <td class="table-text-2">
+                                        12/11/1989
+                                    </td>
+                                    <td>
+                                        <div class="">
+                                            <img src="./assets/icons/heart.png" alt="">
+                                            <span class="table-text-2 mx-2">2:45</span>
+                                            <img src="./assets/icons/three-dot.png" alt="">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="">
+                                    <td class="table-text-2">6</td>
+                                    <td class="d-flex">
+                                        <div class="ms-2 w-auto">
+                                            <img src="./assets/kya hua tera wada.jpg" style="width: 45px;" alt="">
+                                        </div>
+                                        <div class="ms-2 my-auto vstack flex-wrap">
+                                            <span class=" m-0 table-text-2">Kya Hua Tera Wada</span>
+                                            <span class=" opacity-50 table-text">Mohammed Rafi</span>
+                                        </div>
+                                    </td>
+                                    <td class="table-text-2">
+                                        Hum Kisise Kum Naheen
+                                    </td>
+                                    <td class="table-text-2">
+                                        12/11/1989
+                                    </td>
+                                    <td>
+                                        <div class="">
+                                            <img src="./assets/icons/heart.png" alt="">
+                                            <span class="table-text-2 mx-2">2:45</span>
+                                            <img src="./assets/icons/three-dot.png" alt="">
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- bottom playBar -->
+    <div class="row p-3 fixed-bottom bg-album" style="height: auto;">
+        <div class="col-3 d-flex">
+            <div class="ms-2 w-25">
+                <img src="./assets/kya hua tera wada.jpg" style="width: 100%;" alt="">
+            </div>
+            <div class="ms-2 my-auto">
+                <h6 class="text-white m-0">Kya Hua Tera Wada</h6>
+                <span class="text-white opacity-50 ">Mohammed Rafi</span>
+            </div>
+            <div class="my-auto ms-4">
+                <img src="./assets/icons/heart.png" alt="">
+                <img src="./assets/icons/pip.png" alt="">
+            </div>
+        </div>
+
+        <!-- Music Controls -->
+        <div class="col-6 text-center">
+            <div class="">
+                <img src="/assets/icons/shuffle.png" alt="">
+                <img src="/assets/icons/previous.png" alt="">
+                <img src="./assets/icons/gridicons_play.png" alt="">
+                <img src="/assets/icons/next.png" alt="">
+                <img src="/assets/icons/loop.png" alt="">
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+                <span class="text-white opacity-50">4:11</span>
+                <div class=" row w-75 bg-gray mx-2" style="height: 4px;">
+                    <div class="col-9 bg-white"></div>
+                    <div class="col"></div>
+                </div>
+                <span class="text-white opacity-50 ">5:11</span>
+            </div>
+        </div>
+
+        <!-- Volume and Screen controls -->
+        <div class="col-3 d-flex justify-content-end align-items-center">
+            <div class="">
+                <img src="./assets/icons/query-queue.png" class="ms-1" alt="">
+                <img src="./assets/icons/idk.png" class="ms-1" alt="">
+                <img src="./assets/icons/speaker-white.png" class="ms-1" alt="">
+                <img src="./assets/icons/volume-bar.png" class="ms-1" alt="">
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
