@@ -12,31 +12,80 @@
 
 <body>
     <div class="container-fluid" style="height: 100vh;">
-        <!-- sidebar -->
         <div class="row h-100">
-            <div class="col-3 bg-black w-full">
-                <div class="ms-3 mt-4">
-                    <img src="/assets/icons/Spotify logo.png" class="w-50" alt="">
-                </div>
-                <div class="container-fluid">
-                    <ul class="d-flex flex-column nav nav-pills">
-                        <li class="nav-items table-hover ">
-                            <a href="#"><img src="./assets/icons/Home.png" alt="">Home</a>
-                        </li>
-                        <li class="nav-items">
-                            <a href="#"> <img src="./assets/icons/Search.png" alt=""> </a>Search
-                        </li>
-                        <li class="nav-items"><a href="#"> <img src="./assets/icons/Your library.png" alt=""> </a>Your
-                            Library</li>
+            <!-- sidebar -->
+            <div class="col-2 col-md-3 bg-black w-full">
+                <div class="container h-100">
+                    <div class="my-4 ms-3">
+                        <img src="/assets/icons/Spotify logo.png" class="w-50" alt="">
+                    </div>
+                    
+                    <div class="d-flex w-100 flex-column h-75 justify-content-between">
+                        <!-- sidebar navigation | Start -->
+                        <div class="">
+                            <div class="hover-sidebar py-2 px-3">
+                                <img src="./assets/icons/Home.png" style="height: 25px;" alt="Home">
+                                <span class="ms-3 text-white fw-semibold">Home</span>
+                            </div>
+                            <div class="hover-sidebar py-2 px-3">
+                                <img src="./assets/icons/Search.png" style="height: 25px;" alt="Home">
+                                <span class="ms-3 text-white fw-semibold">Search</span>
+                            </div>
+                            <div class="hover-sidebar py-2 px-3">
+                                <img src="./assets/icons/Your library.png" style="height: 25px;" alt="Home">
+                                <span class="ms-3 text-white fw-semibold">Your Library</span>
+                            </div>
+                        </div>
 
-                    </ul>
-                </div>
+                        <!-- sidebar playlist | Middle-->
+                        <div class="">
+                            <div class="hover-sidebar py-2 px-3">
+                                <img src="./assets/icons/plus.png" style="height: 25px;" alt="Home">
+                                <span class="ms-3 text-white fw-semibold">Create Playlist</span>
+                            </div>
+                            <div class="hover-sidebar py-2 px-3">
+                                <img src="./assets/icons/purpleheart.png" style="height: 25px;" alt="Home">
+                                <span class="ms-3 text-white fw-semibold">Liked Songs</span>
+                            </div>
+                            <div class="hover-sidebar py-2 px-3">
+                                <img src="./assets/icons/hotspot.png" style="height: 25px;" alt="Home">
+                                <span class="ms-3 text-white fw-semibold">Your Episodes</span>
+                            </div>
+                        </div>
 
+                        <!-- Sidebar Bottom Options -->
+                        <div class="">
+                            <div class="hover-sidebar py-2 px-3">
+                                <span class="ms-3 text-white fw-semibold">Fav</span>
+                            </div>
+                            <div class="hover-sidebar py-2 px-3">
+                                <span class="ms-3 text-white fw-semibold">Daily Mix 1</span>
+                            </div>
+                            <div class="hover-sidebar py-2 px-3">
+                                <span class="ms-3 text-white fw-semibold">Malayalam</span>
+                            </div>
+                            <div class="hover-sidebar py-2 px-3">
+                                <span class="ms-3 text-white fw-semibold">Dance/Electronix Mix</span>
+                            </div>
+                            <div class="hover-sidebar py-2 px-3">
+                                <span class="ms-3 text-white fw-semibold">EDM/Popular</span>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="hover-sidebar py-2 px-3">
+                                <img src="./assets/icons/download.png" style="height: 25px;" alt="Home">
+                                <span class="ms-3 text-white fw-semibold">Install App</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
 
             </div>
 
 
-            <div class="col-9 bg-black bg-gradient">
+            <!-- main page -->
+            <div class="col-10 col-md-9 bg-black bg-gradient">
                 <!-- nav-bar -->
                 <nav class="navbar navbar-expand-lg ">
                     <div class="container-fluid">
@@ -108,7 +157,7 @@
                     </div>
 
                     <!-- music album -->
-                    <div class="row row-cols-md-2 row-cols-lg-4 g-2">
+                    <div class="row row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-2">
                         <div class="col">
                             <div class="card p-3 bg-album border-none rounded-0" style="width: 200px;">
                                 <img src="./assets/album art.png" class="card-img-top" alt="...">
@@ -188,25 +237,47 @@
 
         </div>
 
-        <div class="row">
-            <div class="col fixed-bottom bg-album" style="height: 80px;">
-                <div class="d-flex justify-content-around">
-                    <div class="row align-items-end">
-                        <div class="col-4">
-                            <img src="./assets/playing-img.png" alt="playing">
+        <!-- Now Playing bottom toolbar -->
 
-                        </div>
-                        <div class="col-8 text-white vstack align-self-center">
-                            <span class="fs-6">Dreaming On</span>
-                            <span class="fs-6 text-white opacity-75">NEFFEX</span>
-                        </div>
-
-                    </div>
-
+        <div class="row p-3 fixed-bottom bg-album" style="height: auto;">
+            <div class="col-3 d-flex">
+                <div class="ms-2">
+                    <img src="./assets/playing-img.png" alt="">
+                </div>
+                <div class="ms-2 my-auto">
+                    <h6 class="text-white m-0">Kya Hua Tera Wada</h6>
+                    <span class="text-white opacity-50 ">Mohammed Rafi</span>
+                </div>
+                <div class="my-auto ms-4">
+                    <img src="./assets/icons/heart.png" alt="">
                 </div>
             </div>
-        </div>
 
+            <!-- Music Controls -->
+            <div class="col-6 text-center">
+                <div class="">
+                    <img src="/assets/icons/shuffle.png" alt="">
+                    <img src="/assets/icons/next.png" alt="">
+                    <img src="./assets/icons/gridicons_play.png" alt="">
+                    <img src="/assets/icons/previous.png" alt="">
+                    <img src="/assets/icons/loop.png" alt="">
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <span class="text-white opacity-50">4:11</span>
+                    <div class=" row w-75 bg-gray mx-2" style="height: 4px;">
+                        <div class="col-9 bg-white"></div>
+                        <div class="col"></div>
+                    </div>
+                    <span class="text-white opacity-50 ">5:11</span>
+                </div>
+            </div>
+
+            <!-- Volume and Screen controls -->
+            <div class="col-3">
+               
+            </div>
+
+        </div>
     </div>
 
 
